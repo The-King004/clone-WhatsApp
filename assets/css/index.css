@@ -1,0 +1,35 @@
+
+
+:root {
+    --primary-color:  ;
+    --secondary-color:  ;
+    --ternery-color:  ;
+    --neutral-color-one:  ;
+    --neutral-color-two:  ;
+    --font-use:  ;
+    --font-family-default: 10px;
+}
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    font-size: var(--font-family-default);
+}
+
+body {
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100%;
+}
