@@ -4,8 +4,9 @@
     --primary-color:  #46bd46;
     --secondary-color:  ;
     --ternery-color:  ;
-    --neutral-color-one:  ;
-    --neutral-color-two:  ;
+    --bg-nav-bar: #2e2e2e;
+    --neutral-color-one:  #fff;
+    --neutral-color-two:  #d9d9d9;
     --font-use:  ;
     --font-family-default: 10px;
 }
@@ -31,6 +32,77 @@ body {
     padding: 0;
     overflow-x: hidden;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
 }
 
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-nav-bar);
+    height: 100%;
+    width: 5rem;
+    padding: 0;
+}
+
+.nav-bar ion-icon {
+    font-size: 2rem;
+    color: var(--neutral-color-one);
+}
+
+.nav-bar .bx {
+    font-size: 2rem;
+    color: var(--neutral-color-one);
+}
+
+.nav-bar .box {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.nav-bar a {
+    text-decoration: none;
+}
+.nav-bar .bar_one {
+    height: 24%;
+}
+
+.nav-bar .bar_two {
+    height: 35%;
+}
+
+.nav-bar .bar_two a {
+    width: 3rem;
+    height: 3rem;
+}
+
+.nav-bar button {
+    background: transparent;
+    width: 4rem;
+    margin: 0;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    border-radius: .5rem;
+}
+
+.nav-bar button:hover {
+    background: rgba(104, 104, 104, 0.3);
+}
+
+.nav-bar .bar_two .profile {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5rem;
+    background: url(../img/photo\ de\ profile.jpg) center top / cover;
+}
